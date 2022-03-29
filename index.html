@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <p id="para">Hi, Guys</p>
+    <button id="clickMe">clickMe</button>
+    <div></div>
+</body>
+<script>
+
+    // // Datatypes
+    // {
+    //     var k = 12;
+    //     let x = 10;
+    //     x = 20;
+    //     const a = "Kartik";
+    //     console.log(typeof k);
+    //     console.log(typeof a);
+    // }
+    // console.log(k);
+    // console.log(a);
+    // console.log(x);
+
+
+
+    // == vs ===
+    // console.log(12 == '12');
+    // console.log(12 === '12');
+
+
+
+    // // String Literals
+    // var fName = "Kartik";
+    // var lName = "Walke";
+
+    // console.log("Hi, My Name is " + fName + " " + lName);
+    // console.log(`Hi, My Name is ${fName} ${lName}`);
+
+
+
+    // type conversion
+
+    // var x = '12';
+    // x = Number(x);
+    // console.log(typeof x);
+
+
+    // Switch Statement
+
+    // var r = "R";
+    // switch (r) {
+    //     case "Kartik":
+    //         console.log("Hi, Kartik");
+    //         break;
+    //     case "Ram":
+    //         console.log("Hi, Ram");
+    //         break;
+
+    //     default:
+    //         console.log("Hello, do I know you?");
+    // }
+
+
+
+    // Ternary Operator
+
+    // var isTrue = false;
+
+    // (isTrue) ? console.log("It's True") : console.log("It's False");
+    // var k = (isTrue) ? 8 : 9;
+    // console.log(k);
+
+
+
+
+    // function - (3 Types)
+
+    // function add(a, b) {
+    //     return a + b;
+    // }
+
+    // var add1 = function (a, b) {
+    //     return a + b;
+    // }
+
+    // var add2 = (a, b) => a + b; // Single line function
+
+    // var add3 = (a, b) => {
+    //     return a + b;
+    // }
+
+
+
+    // Objects
+
+    // var obj = {
+    //     fName: "Kartik",
+    //     lName: "Walke",
+    //     dob: "11-08-2000"
+    // }
+
+    // console.log(obj["fName"]);
+    // console.log(obj.fName);
+
+
+
+    // // DOM
+
+    // var div;
+    // div = document.querySelector("div");
+
+    // console.log(div);
+    // // id = #
+    // // class = .
+    // // element = nothing to add
+    // div.innerHTML = "Kartik";
+
+    // var html = "<ul><li>Kartik</li><li>Uzair</li></ul>";
+    // div.insertAdjacentHTML('afterBegin', html);
+
+    // div.style.backgroundColor = "#e7e7e7";
+
+
+
+    // EventListeners
+
+    // function a() {
+    //     console.log('Hi');
+    // }
+
+    // var btn = document.getElementById("clickMe");
+    // btn.addEventListener('click', () => {
+    //     console.log("Clicked a Button");
+    // });
+
+
+    // IIFE
+    // (() => console.log("Hi"))();
+
+
+
+
+    // closure
+
+    // var x = () => {
+    //     var k = 0;
+    //     return function () {
+    //         console.log(k++);
+    //     }
+    // }
+
+    // var z = x();
+    // z();
+    // z();
+    // z();
+    // z();
+    // z();
+
+    // var arr = [1, 2, 3, 4, 5];
+
+    // arr.forEach((e) => {
+    //     console.log(e);
+    // });
+
+
+    class Book {
+        constructor(bookName, price, bookAuthor) {
+            this.bookName = bookName;
+            this.price = price;
+            this.bookAuthor = bookAuthor;
+        }
+
+        displayBook() {
+            console.log(`You're reading ${this.bookName} by ${this.bookAuthor}`);
+        }
+    }
+
+    var newBook = new Book("Abc", 200, "xyz");
+    newBook.displayBook();
+
+</script>
+
+</html>
